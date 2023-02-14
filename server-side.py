@@ -1,6 +1,7 @@
 import socket
 import sys
 
+request_url = "https://www.mediawiki.org/w/api.php?action=query&format=json&prop=revisions&list=allrevisions&meta=siteinfo&continue=&titles=Main%20Page&formatversion=2&rvprop=user%7Ccomment&arvlimit=50&arvdir=newer"
 
 def server():
     host = socket.gethostname()
@@ -21,7 +22,6 @@ def server():
 
 def wikipedia_api_GET_request():
     pass
-
 
 if __name__ == "__main__":
     server()
