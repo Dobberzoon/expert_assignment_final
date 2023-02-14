@@ -19,5 +19,9 @@ def server():
     connection.close()
 
 
+def wikipedia_api_GET_request():
+    pass
+
+
 if __name__ == "__main__":
     server()
